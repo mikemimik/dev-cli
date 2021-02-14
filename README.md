@@ -4,10 +4,10 @@ dev-cli
 Development CLI
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/dev-cli.svg)](https://npmjs.org/package/dev-cli)
+[![Version](https://img.shields.io/npm/v/mikemimik/dev-cli)](https://npmjs.com/package/@mikemimik/dev-cli)
 [![CircleCI](https://circleci.com/gh/mikemimik/dev-cli/tree/master.svg?style=shield)](https://circleci.com/gh/mikemimik/dev-cli/tree/master)
-[![Downloads/week](https://img.shields.io/npm/dw/dev-cli.svg)](https://npmjs.org/package/dev-cli)
-[![License](https://img.shields.io/npm/l/dev-cli.svg)](https://github.com/mikemimik/dev-cli/blob/master/package.json)
+[![Downloads/year](https://img.shields.io/npm/dy/mikemimik/dev-cli)](https://npmjs.com/package/@mikemimik/dev-cli)
+[![License](https://img.shields.io/npm/l/@mikemimik/dev-cli)](https://github.com/mikemimik/dev-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -16,7 +16,7 @@ Development CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g dev-cli
+$ npm install -g @mikemimik/dev-cli
 $ dev COMMAND
 running command...
 $ dev (-v|--version|version)
