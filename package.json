@@ -1,0 +1,57 @@
+{
+  "name": "dev-cli",
+  "description": "Development CLI",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.js",
+  "author": "Michael Perrotte @mikemimik",
+  "bugs": "https://github.com/mikemimik/dev-cli/issues",
+  "homepage": "https://github.com/mikemimik/dev-cli",
+  "repository": "mikemimik/dev-cli",
+  "bin": {
+    "dev": "./bin/run"
+  },
+  "keywords": [
+    "cli",
+    "dev"
+  ],
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2",
+    "dedent": "^0.7.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@oclif/test": "^1.2.8",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.3.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "dev",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
