@@ -44,6 +44,7 @@
   "oclif": {
     "commands": "./src/commands",
     "bin": "dev",
+    "scope": "mikemimik",
     "plugins": [
       "@oclif/plugin-help",
       "@oclif/plugin-plugins"
