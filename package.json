@@ -19,6 +19,7 @@
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.2",
+    "@oclif/plugin-plugins": "^1.9.5",
     "dedent": "^0.7.0"
   },
   "devDependencies": {
@@ -44,7 +45,8 @@
     "commands": "./src/commands",
     "bin": "dev",
     "plugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
     ]
   },
   "scripts": {
